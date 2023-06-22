@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"  xmlns:th="http://www.thymeleaf.org"    layout:decorate="~{fragments/footer.html}">
     
 <head th:replace="~{fragments/header :: head}"></head>
 <body style="padding-top: 4.5rem">
@@ -34,6 +34,6 @@
     </div>
 </div>
 </main>
-<footer th:replace="~{fragments/footer :: foot}"></footer>
+<footer layout:fragment="foot"></footer>
 </body>
 </html>
